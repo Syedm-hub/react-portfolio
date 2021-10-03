@@ -1,0 +1,12 @@
+.rec.rec-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+  outline: none;
+}
+
+.rec.rec-arrow:hover {
+  border-radius: 50%;
+  background: #63caff !important;
+}
