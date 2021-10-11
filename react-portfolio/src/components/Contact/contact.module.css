@@ -3,8 +3,8 @@
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  margin: 2.5rem 0;
-  padding: 10px;
+  margin: 8rem 0;
+  padding: inherit;
 }
 
 .heading {
@@ -16,6 +16,8 @@
   font-size: var(--big-one);
   line-height: var(--big-height);
   text-align: center;
+  flex-wrap: wrap;
+  padding: initial;
 }
 
 .form {
@@ -25,20 +27,20 @@
   align-items: center;
   min-height: 75vh;
   width: 70vh;
-  min-width: 320px;
+  min-width: 20px;
   max-width: 600px;
   margin: auto;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 40px;
   padding: 10px;
-  margin: 10px 0;
+  margin: 40px 0;
 }
 
 form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 400%;
 }
 
 form .button {
@@ -57,7 +59,7 @@ form .button {
   height: 30vh;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 350px) {
   .form {
     width: 55vh;
   }

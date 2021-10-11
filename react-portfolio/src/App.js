@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Container from "@material-ui/core/Container";
 
-function App() {
+import {
+  Header,
+  HeroContainer,
+  About,
+  Skills,
+  Portfolio,
+  Contact,
+  Footer,
+} from "./components";
+import { data } from "./data";
+import styles from "./app.module.css";
+
+const App = () => {
+  const navList = ["Home", "About", "Skills", "Portfolio", "Contact"];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Container maxWidth="lg" className={styles.container}>
+        <Header list={navList} />
+        <HeroContainer />
+        <About />
+        <Skills />
+        <Portfolio data={data} />
+        <Contact />
+      </Container>
+      <Footer />
+    </>
   );
-}
+};
 
 export default App;
